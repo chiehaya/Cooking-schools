@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.page-price__inner {
+    position: relative;
+}
+
+.page-price__inner.inner {
+    @include mq(md){
+        max-width: rem(750);
+    }
+}
+
+.page-price__decoration {
+    display: block;
+    position: absolute;
+    width: rem(120);
+    top: rem(-25);
+    left: rem(15);
+    @include mq(md){
+        width: rem(301);
+        top: rem(-70);
+        left: max(calc(50% - 49vw),-15.5rem);
+    }
+}
+
+.page-price__table {
+    width: 100%;
+    line-height: 1;
+    text-align: center;
+}
+
+.page-price__table + .page-price__table {
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: rem(80);
+    }
+}

@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.detail-campaign__item {
+    text-align: center;
+    box-shadow: rem(2) rem(3) rem(3) rem(3) rgba(0, 0, 0, .05);
+    display: block;
+}
+
+.detail-campaign__item:hover .detail-campaign__img img {
+    transition: transform .6s ease; 
+    transform: scale(1.35);
+}
+
+.detail-campaign__item + .detail-campaign__item {
+    margin-top: rem(40);
+}
+
+.detail-campaign__img {
+    width: 100%;
+    aspect-ratio: 294 / 188;
+    transition: transform .6s ease; 
+    overflow: hidden;
+}
+    
+.detail-campaign__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.detail-campaign__content {
+    padding-left: rem(23);
+    padding-right: rem(23);
+    padding-bottom: rem(18);
+}
+
+.detail-campaign__title {
+    width: 100%;
+    margin-top: rem(16);
+    line-height: 1;
+    font-weight: $medium;
+    font-size: rem(16);
+    border-bottom: 1px solid $accent-color;
+    padding-bottom: rem(13);
+}
+
+.detail-campaign__text {
+    width: 100%;
+    margin-top: rem(10);
+    font-size: rem(14);
+    text-align: center;
+}
+
+.detail-campaign__price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: rem(16);
+    letter-spacing: 0;
+}
+
+.detail-campaign__listing-price {
+    font-family: $lato-font-family;
+    font-weight: $bold;
+    font-size: rem(20);
+    position: relative;
+}
+
+.detail-campaign__listing-price::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #C94800;
+    width: 86%;
+    height: rem(3);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.detail-campaign__discount-price {
+    font-family: $lato-font-family;
+    font-weight: $bold;
+    font-size: rem(32);
+    color: $accent-color;
+}
+
+.detail-campaign__btn {
+    margin-top: rem(45);
+    text-align: center;
+}
+

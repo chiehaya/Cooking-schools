@@ -1,0 +1,182 @@
+@use "global" as *;
+
+.campaign-item {
+    background-color: $base-color;
+    box-shadow: rem(2) rem(3) rem(3) rem(3) rgba(0, 0, 0, .05);
+    height: auto;
+    @include mq(md){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.campaign-item__img {
+    aspect-ratio: 280 / 188;
+    max-height: rem(188);
+    width: 100%;
+    @include mq(md){
+    aspect-ratio: 334 / 223;
+    max-height: rem(223);
+    }
+}
+
+.campaign-item__img--sub {
+    @include mq(md){
+        aspect-ratio: 520 / 347;
+        max-height: rem(347);
+    }
+}
+
+.campaign-item__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.campaign-item__content {
+    padding: rem(16);
+    @include mq(md){
+        padding-top: rem(24);
+        padding-bottom: rem(33);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+
+.campaign-item__content--sub {
+    @include mq(md){
+        padding-right: rem(24);
+        padding-left: rem(24);
+        padding-bottom: rem(52);
+    }
+}
+
+.campaign-item__title {
+    width: 100%;
+    margin-top: rem(8);
+    line-height: 1;
+    font-weight: $medium;
+    font-size: rem(16);
+    border-bottom: 1px solid $accent-color;
+    padding-bottom: rem(10);
+    @include mq(md){
+        flex-grow: 1; 
+    }
+}
+
+.campaign-item__title--sub {
+    @include mq(md){
+        font-size: rem(24);
+    }
+}
+
+.campaign-item__text {
+    font-size: rem(14);
+    margin-top: rem(10);
+    text-align: center;
+    width: 100%;
+    @include mq(md){
+        font-size: rem(16);
+        padding-right: rem(17);
+        margin-top: rem(16);
+    }
+}
+
+.campaign-item__text--sub {
+    @include mq(md){
+        margin-top: rem(24);
+    }
+}
+
+.campaign-item__price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: rem(16);
+    letter-spacing: 0;
+    margin: 0 auto;
+    @include mq(md){
+        gap: rem(25);
+        margin-top: rem(-3);
+    }
+}
+
+.campaign-item__listing-price {
+    font-family: $lato-font-family;
+    font-weight: $bold;
+    font-size: rem(20);
+    position: relative;
+    @include mq(md){
+        font-size: rem(24);
+    }
+}
+
+.campaign-item__listing-price::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #C94800;
+    width: 86%;
+    height: rem(3);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.campaign-item__discount-price {
+    font-family: $lato-font-family;
+    font-weight: $bold;
+    font-size: rem(32);
+    color: $accent-color;
+    @include mq(md){
+        font-size: rem(40);
+    }
+}
+
+.campaign-item__message {
+    display: none;
+    @include mq(md){
+        display: block;
+        display: flex;
+        margin: rem(16) auto 0;
+    }
+}
+
+.campaign-item__message--sub {
+    @include mq(md){
+        margin-top: rem(16);
+    }
+}
+
+.campaign-item__date {
+    display: none;
+    @include mq(md){
+        display: block;
+        margin: rem(32) auto 0;
+        color: $accent-color;
+        font-weight: $bold;
+        font-family: $lato-font-family;
+        line-height: 1;
+    }
+}
+
+.campaign-item__reservation {
+    display: none;
+    @include mq(md){
+        display: block;
+        margin: rem(7) auto 0;
+        font-size: rem(14);
+        color: $accent-color;
+        line-height: 1;
+    }
+}
+
+.campaign-item__btn {
+    display: none;
+    @include mq(md){
+        text-align: center;
+        display: block;
+        margin: rem(16) auto 0;
+    }
+}

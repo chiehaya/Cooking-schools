@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.voice__inner {
+    @include mq(md){
+        position: relative;
+    }
+}
+
+.voice__decoration1,.voice__decoration2 {
+    display: none;
+    @include mq(md){
+        display: block;
+        position: absolute;
+    }
+}
+
+.voice__decoration1 {
+    width: rem(301);
+    top: rem(-121);
+    left: max(calc(50% - 49vw),-3.4375rem);
+}
+
+.voice__decoration2 {
+    width: rem(71);
+    bottom: rem(-70);
+    right: rem(25);
+}
+
+.voice__contents {
+    margin-top: rem(46);
+    @include mq(md){
+        margin-top: rem(30);
+    }
+}
+
+.voice__message {
+    margin-top: rem(30);
+    text-align: center;
+    @include mq(md){
+        margin-top: rem(50);
+    }
+}
+
+.voice__btn {
+    text-align: center;
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: rem(80);
+    }
+}

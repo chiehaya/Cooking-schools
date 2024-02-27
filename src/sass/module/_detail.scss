@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.detail__group+ .detail__group {
+    margin-top: rem(80);
+}
+
+.detail__side-title {
+    padding-left: rem(74);
+    padding-top: rem(13);
+    padding-bottom: rem(13);
+    font-size: rem(24);
+    line-height: 1;
+    border-left: 8px solid $accent-color;
+    font-weight: $regular;
+    position: relative;
+}
+
+.detail__side-title::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../assets/images/common/detail-tag.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: rem(50);
+    height: rem(50);
+    top: 0;
+    left: rem(16);
+}
+
+
+.detail__side-title img {
+    width: rem(50);
+}
+
+.detail__popular {
+    margin-top: rem(24);
+}
+
+.detail__voice {
+    margin-top: rem(24);
+}
+
+.detail__campaign {
+    margin-top: rem(24);
+}
+
+.detail__archive {
+    margin-top: rem(29);
+}

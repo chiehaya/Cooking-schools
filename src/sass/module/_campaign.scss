@@ -1,0 +1,117 @@
+@use "global" as *;
+
+.campaign {
+    overflow: hidden;
+}
+
+.campaign__inner {
+    @include mq(md){
+        position: relative; 
+    }
+}
+
+.campaign__inner.inner{
+    padding-left: rem(12);
+    @include mq(md){
+        padding-left: rem(20);
+    }
+}
+
+.campaign__list {
+    margin-top: rem(31);
+    margin-right: calc(50% - 50vw);
+    @include mq(md){
+        margin-top: rem(42);
+    }
+}
+
+.campaign__swiper {
+    padding-bottom: rem(5);
+    padding-left: rem(3);
+    @include mq(md){
+        padding-left: rem(5);
+    }
+}
+
+.campaign__swiper-controller {
+    display: none;
+    @include mq(md){
+        align-items: center;
+        display: flex;
+        gap: rem(80);
+        position: absolute;
+        width: rem(259);
+        top: rem(24);
+        right: rem(15);
+    }
+}
+
+.campaign .swiper-button-prev,
+.campaign .swiper-button-next{
+    border: 1px solid $accent-color;
+    border-radius: 50%;
+    width: rem(80);
+    height: rem(80);
+}
+
+.campaign .swiper-button-prev:after,
+.campaign .swiper-button-next:after {
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    margin: auto;
+    position: absolute;
+    width: rem(39);
+    border-radius: 30px;
+}
+
+.campaign .swiper-button-prev::after,
+.campaign .swiper-button-next::after {
+    border-bottom: 1px solid $accent-color;
+}
+
+.campaign .swiper-button-prev:before,
+.campaign .swiper-button-next:before {
+    top: 45%;
+    content: "";
+    margin: auto;
+    position: absolute;
+    width: rem(10);
+    border-radius: 30px;
+}
+
+.campaign .swiper-button-prev:before {
+    border-bottom: 1px solid $accent-color;
+    transform: translateY(-50%) rotate(-45deg);
+    left: rem(18);
+}
+
+.campaign .swiper-button-next:before {
+    border-bottom: 1px solid $accent-color;
+    transform: translateY(-50%) rotate(45deg);
+    right: rem(18);
+}
+
+.campaign__item {
+    width: rem(280);
+    @include mq(md){
+        width: rem(334);
+    }
+}
+
+.campaign__message {
+    margin-top: rem(40);
+    text-align: center;
+    @include mq(md){
+        margin-top: rem(50);
+    }
+}
+
+.campaign__btn {
+    margin-top: rem(37);
+    text-align: center;
+    padding-bottom: rem(5);
+    @include mq(md){
+        margin-top:rem(78) ;
+    }
+}
