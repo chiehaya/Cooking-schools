@@ -27,13 +27,13 @@
                                 </a>
                             </li>
                             <li class="sitemap__link">
-                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">ライセンス取得</a>
+                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">お試しレッスン</a>
                             </li>
                             <li class="sitemap__link">
-                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">貸切体験ダイビング</a>
+                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">パンコース</a>
                             </li>
                             <li class="sitemap__link">
-                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">ナイトダイビング</a>
+                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">本格シェフコース</a>
                             </li>
                         </ul>
                         <ul class="sitemap__item">
@@ -48,17 +48,17 @@
                         <ul class="sitemap__item">
                             <li class="sitemap__title">
                                 <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">
-                                ダイビング情報
+                                受講コース
                                 </a>
                             </li>
                             <li class="sitemap__link">
-                                <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">ライセンス講習</a>
+                                <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">お試しレッスン</a>
                             </li>
                             <li class="sitemap__link">
-                                <a href="<?php echo esc_url(home_url("/information/?tab=3")) ?>">体験ダイビング</a>
+                                <a href="<?php echo esc_url(home_url("/information/?tab=3")) ?>">パンコース</a>
                             </li>
                             <li class="sitemap__link">
-                                <a href="<?php echo esc_url(home_url("/information/?tab=2")) ?>">ファンダイビング</a>
+                                <a href="<?php echo esc_url(home_url("/information/?tab=2")) ?>">本格コース</a>
                             </li>
                         </ul>
                         <ul class="sitemap__item">
@@ -86,13 +86,13 @@
                                 </a>
                             </li>
                             <li class="sitemap__link">
-                                <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">ライセンス講習</a>
+                                <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">お試しレッスン</a>
                             </li>
                             <li class="sitemap__link">
-                                <a href="<?php echo esc_url(home_url("/information/?tab=3")) ?>">体験ダイビング</a>
+                                <a href="<?php echo esc_url(home_url("/information/?tab=3")) ?>">パンコース</a>
                             </li>
                             <li class="sitemap__link">
-                                <a href="<?php echo esc_url(home_url("/information/?tab=2")) ?>">ファンダイビング</a>
+                                <a href="<?php echo esc_url(home_url("/information/?tab=2")) ?>">本格コース</a>
                             </li>
                         </ul>
                     </div>
@@ -106,14 +106,12 @@
                         </ul>
                         <ul class="sitemap__item sitemap__item--last">
                             <li class="sitemap__title">
-                                <a href="page-privacy.html">
-                                プライバシー<br class="u-mobile">ポリシー
-                                </a>
+                                <a href="<?php echo esc_url(home_url("/privacypolicy")) ?>">プライバシー<br class="u-mobile">ポリシー</a>
                             </li>
                         </ul>
                         <ul class="sitemap__item">
                             <li class="sitemap__title">
-                                <a href="page-terms.html">利用規約</a>
+                                <a href="<?php echo esc_url(home_url("/terms-of-service")) ?>">利用規約</a>
                             </li>
                         </ul>
                         <ul class="sitemap__item">

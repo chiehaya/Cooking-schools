@@ -15,7 +15,7 @@
     top: rem(-23);
     left: max(calc(50% - 47vw),-12.4375rem);
     @include mq(md){
-        width: rem(301);
+        width: rem(250);
         top: rem(-68);
     }
 }

@@ -10,8 +10,8 @@
     right: rem(15);
     width: rem(109);
     @include mq(md){
-        width: rem(301);
-        top: rem(-36);
+        width: rem(250);
+        top: rem(-68);
         right: max(calc(50% - 49vw), -6.625rem);
     }
 }

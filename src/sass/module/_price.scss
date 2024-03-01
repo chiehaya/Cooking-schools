@@ -16,7 +16,7 @@
         display: block;
         position: absolute;
         bottom: rem(-50);
-        width: rem(437);
+        width: rem(280);
         left: max(50% - 49vw, -3.4375rem);
     }
 }
@@ -48,7 +48,7 @@
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: #408F95;
+    background-color: $accent-color;
 }
 
 .price__img img {

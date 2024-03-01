@@ -71,13 +71,13 @@
                             <a href="<?php echo esc_url(home_url("/campaign")) ?>">キャンペーン</a>
                         </li>
                         <li class="page-nav__link">
-                            <a href="<?php echo esc_url(home_url("/campaign")) ?>">ライセンス取得</a>
+                            <a href="<?php echo esc_url(home_url("/campaign")) ?>">お試しレッスン</a>
                         </li>
                         <li class="page-nav__link">
-                            <a href="<?php echo esc_url(home_url("/campaign")) ?>">貸切体験ダイビング</a>
+                            <a href="<?php echo esc_url(home_url("/campaign")) ?>">パンコース</a>
                         </li>
                         <li class="page-nav__link">
-                            <a href="<?php echo esc_url(home_url("/campaign")) ?>">ナイトダイビング</a>
+                            <a href="<?php echo esc_url(home_url("/campaign")) ?>">本格シェフコース</a>
                         </li>
                     </ul>
                     <ul class="page-nav__item">
@@ -89,16 +89,16 @@
                 <div class="page-nav__flex">
                     <ul class="page-nav__item">
                         <li class="page-nav__title">
-                            <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">ダイビング情報</a>
+                            <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">受講コース</a>
                         </li>
                         <li class="page-nav__link">
-                            <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">ライセンス講習</a>
+                            <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">お試しレッスン</a>
                         </li>
                         <li class="page-nav__link">
-                            <a href="<?php echo esc_url(home_url("/information/?tab=3")) ?>">体験ダイビング</a>
+                            <a href="<?php echo esc_url(home_url("/information/?tab=3")) ?>">パンコース</a>
                         </li>
                         <li class="page-nav__link">
-                            <a href="<?php echo esc_url(home_url("/information/?tab=2")) ?>">ファンダイビング</a>
+                            <a href="<?php echo esc_url(home_url("/information/?tab=2")) ?>">本格コース</a>
                         </li>
                     </ul>
                     <ul class="page-nav__item">
@@ -120,13 +120,13 @@
                             <a href="<?php echo esc_url(home_url("/price")) ?>">料金一覧</a>
                         </li>
                         <li class="page-nav__link">
-                            <a href="<?php echo esc_url(home_url("/price#price")) ?>">ライセンス講習</a>
+                            <a href="<?php echo esc_url(home_url("/price#price")) ?>">お試しレッスン</a>
                         </li>
                         <li class="page-nav__link">
-                            <a href="<?php echo esc_url(home_url("/price#price-lisence")) ?>">体験ダイビング</a>
+                            <a href="<?php echo esc_url(home_url("/price#price-lisence")) ?>">パンコース</a>
                         </li>
                         <li class="page-nav__link">
-                            <a href="<?php echo esc_url(home_url("/price#price-lisence")) ?>">ファンダイビング</a>
+                            <a href="<?php echo esc_url(home_url("/price#price-lisence")) ?>">本格コース</a>
                         </li>
                     </ul>
                 </div>
@@ -160,7 +160,7 @@
             </div>
         </div>
         <div class="footer__copy">
-            Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.
+            Copyright &copy; 2021 - 2023 Cooking Wata LLC. All Rights Reserved.
         </div>
     </div>
 </footer>

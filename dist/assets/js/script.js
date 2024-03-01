@@ -330,8 +330,8 @@ jQuery(function ($) {
 
   // page-404.htmlのbodyタグにのみ背景色を設定
   $(function () {
-    if (window.location.pathname === '/404') {
-      $('body').css('background-color', '#408F95'); // 任意の色を指定
+    if ($('body').hasClass('custom-404-class')) {
+      $('body').css('background-color', '#B23B11'); // 任意の色を指定
     }
   });
 

@@ -3,8 +3,8 @@
     <section class="mv js-mv">
         <div class="mv__inner">
             <div class="mv__title-wrap mv-title">
-                <h2 class="mv-title__main">diving</h2>
-                <p class="mv-title__sub">into the ocean</p>
+                <h2 class="mv-title__main">lesson</h2>
+                <p class="mv-title__sub">in the kitchen</p>
             </div>
             <div class="mv__swiper swiper js-mv-swiper">
                 <div class="swiper-wrapper">
@@ -36,8 +36,8 @@
     <div class="loader">
         <div class="loader__inner">
             <div class="loader__title mv-title mv-title--green">
-                <h2 class="mv-title__main">diving</h2>
-                <p class="mv-title__sub">into the ocean</p>
+                <h2 class="mv-title__main">lesson</h2>
+                <p class="mv-title__sub">in the kitchen</p>
             </div>
             <div class="loader__img">
                 <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-pc01.jpg" alt="ローディングイメージ">
@@ -143,12 +143,12 @@
             </div>
             <div class="about__container">
                 <p class="about__head">
-                    Dive into<br>the Ocean
+                    Let's<br>Cooking！
                 </p>
                 <div class="about__wrapper">
                     <p class="about__text">
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                        クッキング わたは初心者の方から本格派まで、あらゆる方に向けたコースがあります。<br>
+                        また、取り扱っているメニューは全て管理栄養士が考案しており、栄養に配慮されているから安心していただけます。
                     </p>
                     <div class="about__btn">
                         <a href="<?php echo esc_url(home_url("/about-us")) ?>" class="btn">
@@ -165,18 +165,18 @@
     <section class="information layout-information">
         <div class="information__inner inner">
             <div class="information__title section-title">
-                <p class="section-title__en">Information</p>
-                <h2 class="section-title__ja">ダイビング情報</h2>
+                <p class="section-title__en">Course</p>
+                <h2 class="section-title__ja">コース一覧</h2>
             </div>
             <div class="information__container">
                 <div class="information__img js-colorbox">
                     <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information.jpg" alt="information">
                 </div>
                 <div class="information__contents">
-                    <p class="information__topic">ライセンス講習</p>
+                    <p class="information__topic">お試しレッスン</p>
                     <p class="information__text">
-                        当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
-                        正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
+                        クッキング わたの1番人気コースは、お試しレッスン。料理初心者でも安心して参加できます。<br>
+                        女性だけでなく、最近は男性同士の参加も増えています！お気軽にお申し込みください！
                     </p>
                     <div class="information__btn">
                         <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>" class="btn">
@@ -342,79 +342,27 @@
                     <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-sp.jpg" alt="亀の画像">
                 </picture>
                 <div class="price__items">
-                    <h3 class="price__menu">ライセンス講習</h3>
                     <?php
-                    $free_item = SCF::get('lisence_group', 26);
-                    if (!empty($free_item) && isset($free_item[0]['lisence_menu'], $free_item[0]['lisence_price']) && $free_item[0]['lisence_menu'] !== '' && $free_item[0]['lisence_price'] !== '') : 
+                    $pran_fields = array('pran01', 'pran02', 'pran03', 'pran04');
+                    foreach ($pran_fields as $field) :
+                            $price_menu = SCF::get_option_meta('price', $field . '_name');
+                            $free_item = SCF::get_option_meta('price', $field);
+                    if (!empty($free_item) && isset($free_item[0][$field . '_menu']) && isset($free_item[0][$field . '_price']) && $free_item[0][$field . '_menu'] !== '' && $free_item[0][$field . '_price'] !== '') :
                     ?>
+                    <h3 class="price__menu"><?php echo esc_html($price_menu); ?></h3>
                     <dl class="price__list">
-                        <?php
-                        foreach ($free_item as $fields) : ?>
-                        <?php if (!empty($fields['lisence_menu']) && !empty($fields['lisence_price'])) : ?>
+                        <?php foreach ($free_item as $fields) : ?>
                             <div class="price__wrapper">
-                                <dt class="price__term"><?= $fields['lisence_menu']; ?></dt>
-                                <dd class="price__description"><?= $fields['lisence_price']; ?></dd>
-                            </div>
-                        <?php endif; ?>
-                        <?php endforeach; ?>
-                    </dl>
-                    <?php else : ?>
-                        <p>現在メニューはありません</p>
-                    <?php endif; ?>
-                    
-                    <h3 class="price__menu">体験ダイビング</h3>
-                    <?php
-                    $free_item = SCF::get('trial_diving', 26);
-                    if (!empty($free_item) && isset($free_item[0]['trial_diving_menu'], $free_item[0]['trial_diving_price']) && $free_item[0]['trial_diving_menu'] !== '' && $free_item[0]['trial_diving_price'] !== '') :
-                    ?>
-                    <dl class="price__list">
-                    <?php
-                        foreach ($free_item as $fields) : ?>
-                            <div class="price__wrapper">
-                                <dt class="price__term"><?= $fields['trial_diving_menu']; ?></dt>
-                                <dd class="price__description"><?= $fields['trial_diving_price']; ?></dd>
+                                <dt class="price__term"><?= $fields[$field . '_menu']; ?></dt>
+                                <dd class="price__description"><?= $fields[$field . '_price']; ?></dd>
                             </div>
                         <?php endforeach; ?>
                     </dl>
                     <?php else : ?>
                         <p>現在メニューはありません</p>
                     <?php endif; ?>
-
-                    <h3 class="price__menu">ファンダイビング</h3>
-                    <?php
-                    $free_item = SCF::get('fun_diving', 26);
-                    if (!empty($free_item) && isset($free_item[0]['fun_diving_menu'], $free_item[0]['fun_diving_price']) && $free_item[0]['fun_diving_menu'] !== '' && $free_item[0]['fun_diving_price'] !== '') :
-                    ?>
-                    <dl class="price__list">
-                        <?php
-                        foreach ($free_item as $fields) : ?>
-                            <div class="price__wrapper">
-                                <dt class="price__term"><?php echo $fields['fun_diving_menu']; ?></dt>
-                                <dd class="price__description"><?php echo $fields['fun_diving_price']; ?></dd>
-                            </div>
-                        <?php endforeach; ?>
-                    </dl>
-                    <?php else : ?>
-                        <p>現在メニューはありません</p>
-                    <?php endif; ?>
-
-                    <h3 class="price__menu">スペシャルダイビング</h3>
-                    <?php
-                    $free_item = SCF::get('special_diving', 26);
-                    if (!empty($free_item) && isset($free_item[0]['special_diving_menu'], $free_item[0]['special_diving_price']) && $free_item[0]['special_diving_menu'] !== '' && $free_item[0]['special_diving_price'] !== '') :
-                    ?>
-                        <dl class="price__list">
-                            <?php foreach ($free_item as $fields) : ?>
-                                <div class="price__wrapper">
-                                    <dt class="price__term"><?= $fields['special_diving_menu']; ?></dt>
-                                    <dd class="price__description"><?= $fields['special_diving_price']; ?></dd>
-                                </div>
-                            <?php endforeach; ?>
-                        </dl>
-                    <?php else : ?>
-                        <p>現在メニューはありません</p>
-                    <?php endif; ?>
-                </div>
+                    <?php endforeach; ?>
+                </div>      
             </div>
             <div class="price__btn">
                 <a href="<?php echo esc_url(home_url("/price")) ?>" class="btn">

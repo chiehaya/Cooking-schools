@@ -235,7 +235,7 @@ jQuery(function ($) {
 
   // 画面幅によって実行する関数を選択
   $(function () {
-    if (window.innerWidth > 768 && window.location.pathname === "/wordpress-demo/") {
+    if (window.innerWidth > 768 && window.location.pathname === "/") {
       executeOnLargeScreen();
     } else {
       executeOnSmallScreen();
@@ -330,8 +330,8 @@ jQuery(function ($) {
 
   // page-404.htmlのbodyタグにのみ背景色を設定
   $(function () {
-    if (window.location.pathname === '/404') {
-      $('body').css('background-color', '#408F95'); // 任意の色を指定
+    if ($('body').hasClass('custom-404-class')) {
+      $('body').css('background-color', '#B23B11'); // 任意の色を指定
     }
   });
 

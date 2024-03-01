@@ -18,7 +18,7 @@
 
 .info-page__tag {
     text-align: center;
-    background-color: #DDF0F1;
+    background-color: $bg-green;
     flex: 1;
     padding: rem(10) 0;
     color: $accent-color;
@@ -56,40 +56,40 @@
 }
 
 .info-page__tag:first-child span:after {
-    background-image: url(../../assets/images/common/tab01.svg);
+    background-image: url(../../assets/images/common/tab01.png);
 }
 
 .info-page__tag:nth-child(2) span:after {
-    background-image: url(../../assets/images/common/tab02.svg);
+    background-image: url(../../assets/images/common/tab02.png);
 }
 
 .info-page__tag:nth-child(3) span:after {
-    background-image: url(../../assets/images/common/tab03.svg);
+    background-image: url(../../assets/images/common/tab03.png);
 }
 
 
 .info-page__tag:first-child:hover span::after {
-    background-image: url(../../assets/images/common/tab01-white.svg);
+    background-image: url(../../assets/images/common/tab01-white.png);
 }
 
 .info-page__tag:nth-child(2):hover span::after {
-    background-image: url(../../assets/images/common/tab02-white.svg);
+    background-image: url(../../assets/images/common/tab02-white.png);
 }
 
 .info-page__tag:nth-child(3):hover span::after {
-    background-image: url(../../assets/images/common/tab03-white.svg);
+    background-image: url(../../assets/images/common/tab03-white.png);
 }
 
 .info-page__tag.is-active:first-child span:after {
-    background-image: url(../../assets/images/common/tab01-white.svg);
+    background-image: url(../../assets/images/common/tab01-white.png);
 }
 
 .info-page__tag.is-active:nth-child(2) span:after {
-    background-image: url(../../assets/images/common/tab02-white.svg);
+    background-image: url(../../assets/images/common/tab02-white.png);
 }
 
 .info-page__tag.is-active:nth-child(3) span:after {
-    background-image: url(../../assets/images/common/tab03-white.svg);
+    background-image: url(../../assets/images/common/tab03-white.png);
 }
 
 .info-page__tag:hover {

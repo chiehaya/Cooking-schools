@@ -28,12 +28,12 @@
             </div>
             <div class="about-page__container">
                 <p class="about-page__head">
-                    Dive into<br>the Ocean
+                    Let's<br>Cooking！
                 </p>
                 <div class="about-page__wrapper">
                     <p class="about-page__text">
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                        クッキング わたは初心者の方から本格派まで、あらゆる方に向けたコースがあります。<br>
+                        また、取り扱っているメニューは全て管理栄養士が考案しており、栄養に配慮されているから安心していただけます。
                     </p>
                 </div>
             </div>

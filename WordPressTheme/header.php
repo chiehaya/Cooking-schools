@@ -32,7 +32,7 @@
                         <a href="<?php echo esc_url(home_url("/about-us")) ?>">About us<span>私たちについて</span></a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">Information<span>ダイビング情報</span></a>
+                        <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">Course<span>受講コース</span></a>
                     </li>
                     <li class="header__nav-item">
                         <a href="<?php echo esc_url(home_url("/blog")) ?>">Blog<span>ブログ</span></a>
@@ -69,13 +69,13 @@
                                 </a>
                                 </li>
                                 <li class="page-nav__link">
-                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">ライセンス取得</a>
+                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">お試しレッスン</a>
                                 </li>
                                 <li class="page-nav__link">
-                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">貸切体験ダイビング</a>
+                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">パンコース</a>
                                 </li>
                                 <li class="page-nav__link">
-                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">ナイトダイビング</a>
+                                <a href="<?php echo esc_url(home_url("/campaign")) ?>">本格シェフコース</a>
                                 </li>
                             </ul>
                             <ul class="page-nav__item">
@@ -90,17 +90,17 @@
                             <ul class="page-nav__item">
                                 <li class="page-nav__title">
                                 <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">
-                                    ダイビング情報
+                                    受講コース
                                 </a>
                                 </li>
                                 <li class="page-nav__link">
-                                <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">ライセンス講習</a>
+                                <a href="<?php echo esc_url(home_url("/information/?tab=1")) ?>">お試しレッスン</a>
                                 </li>
                                 <li class="page-nav__link">
-                                <a href="<?php echo esc_url(home_url("/information/?tab=3")) ?>">体験ダイビング</a>
+                                <a href="<?php echo esc_url(home_url("/information/?tab=3")) ?>">パンコース</a>
                                 </li>
                                 <li class="page-nav__link">
-                                <a href="<?php echo esc_url(home_url("/information/?tab=2")) ?>">ファンダイビング</a>
+                                <a href="<?php echo esc_url(home_url("/information/?tab=2")) ?>">本格コース</a>
                                 </li>
                             </ul>
                             <ul class="page-nav__item">
@@ -128,13 +128,13 @@
                                 </a>
                                 </li>
                                 <li class="page-nav__link">
-                                <a href="page-price.html#price">ライセンス講習</a>
+                                <a href="page-price.html#price">お試しレッスン</a>
                                 </li>
                                 <li class="page-nav__link">
-                                <a href="page-price.html#price-lisence">体験ダイビング</a>
+                                <a href="page-price.html#price-lisence">パンコース</a>
                                 </li>
                                 <li class="page-nav__link">
-                                <a href="page-price.html#price-lisence">ファンダイビング</a>
+                                <a href="page-price.html#price-lisence">本格コース</a>
                                 </li>
                             </ul>
                             </div>

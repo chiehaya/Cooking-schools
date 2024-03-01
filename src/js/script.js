@@ -324,11 +324,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
 // page-404.htmlのbodyタグにのみ背景色を設定
-    $(function() {
-        if (window.location.pathname === '/404') {
-            $('body').css('background-color', '#408F95'); // 任意の色を指定
-        }
-    });
+$(function () {
+    if ($('body').hasClass('custom-404-class')) {
+        $('body').css('background-color', '#B23B11'); // 任意の色を指定
+    }
+});
 
 //料金表　thのcolspan,rowspanを画面幅によって切り替え
     $(window).on('resize', function() {

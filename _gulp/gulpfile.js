@@ -177,7 +177,7 @@ const browserSyncOption = {
   notify: false,
   // server: "../dist/", // ローカルサーバーのルートディレクトリ
   // WordPressの場合は↓を有効にする。その場合、↑(server)はコメントアウトする。
-  proxy: "http://codeups.local/", // ローカルサーバーのURL（WordPress）
+  proxy: "http://cooking-school.local/", // ローカルサーバーのURL（WordPress）
 };
 const browserSyncFunc = () => {
   browserSync.init(browserSyncOption);
